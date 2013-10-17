@@ -53,9 +53,9 @@ body {
   content: "\"";
 }
 /* line 54, ../sass/screen.scss */
-.json .js-value.js-number, .json .js-value.js-boolean {
+.json .js-value.js-number, .json .js-value.js-boolean, .json .js-value.js-null {
   display: inline;
-  color: green;
+  color: darkmagenta;
 }
 /* line 59, ../sass/screen.scss */
 .json .js-value.js-object {
