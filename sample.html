@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="./stylesheets/screen.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <title>サンプル</title>
+</head>
+<body>
+  <h1>JSONをHTML＆CSSでいい感じに表現</h1>
+
+  <div class="json">
+    <div class="js-value js-object">
+      <div class="element">
+        <div class="js-key">key1</div>
+        <div class="js-value js-string">value1</div>
+      </div>
+      <div class="element">
+        <div class="js-key">key2</div>
+        <div class="js-value js-object">
+          <div class="element">
+            <div class="js-key">key3</div>
+            <div class="js-value js-number">12345</div>
+          </div>
+          <div class="element">
+            <div class="js-key">key4</div>
+            <div class="js-value js-array">
+              <div class="element">
+                <div class="js-value js-string">A</div>
+              </div>
+              <div class="element">
+                <div class="js-value js-string">B</div>
+              </div>
+              <div class="element">
+                <div class="js-value js-number">3</div>
+              </div>
+              <div class="element">
+                <div class="js-value js-object">
+                  <div class="element">
+                    <div class="js-key">fuga</div>
+                    <div class="js-value js-number">12345</div>
+                  </div>
+                  <div class="element">
+                    <div class="js-key">hoge</div>
+                    <div class="js-value js-number">12345</div>
+                  </div>
+                </div>
+              </div>
+              <div class="element">
+                <div class="js-value js-string">4</div>
+              </div>
+            </div>
+          </div>
+          <div class="element">
+            <div class="js-key">key6</div>
+            <div class="js-value js-string">めっちゃ長い文字列ABCDEFGめっちゃ長い文字列ABCDEFGめっちゃ長い文字列ABCDEFGめっちゃ長い文字列ABCDEFG</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
