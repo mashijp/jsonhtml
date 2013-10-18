@@ -11,6 +11,41 @@
 <body>
   <h1>JSONをHTML＆CSSでいい感じに表現</h1>
 
+  <div class="json2">
+    <dl class="js-string">
+      <dt>"<span class="content">key1</span>":</dt>
+      <dd>"<span class="content">value1</span>"</dd>
+    </dl>
+    <dl class="js-object">
+      <dt>"<span class="content">key2</span>":</dt>
+      <dd>
+        <dl class="js-boolean">
+          <dt>"<span class="content">key3</span>":</dt>
+          <dd><span class="content">123</span></dd>
+        </dl>
+        <dl class="js-array">
+          <dt>"<span class="content">key4</span>":</dt>
+          <dd>
+            <dl class="js-number">
+              <dd>1</dd>
+            </dl>
+            <dl class="js-null">
+              <dd>null</dd>
+            </dl>
+            <dl class="js-object">
+              <dd>
+                <dl class="js-number">
+                  <dt>key5</dt>
+                  <dd>1234</dd>
+                </dl>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+      </dd>
+    </dl>
+  </div>
+
   <div class="json">
     <div class="js-value js-object">
       <div class="element">

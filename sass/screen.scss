@@ -13,6 +13,40 @@ body {
   margin: 20px;
 }
 
+.json2 {
+  dl {
+    display: block;
+    margin-left: 20px;
+
+    &>dt {
+      display: inline;
+      &>.content {
+        color: darkblue;
+      }
+    }
+    &>dd {
+      display: inline;
+    }
+  }
+  dl.js-string {
+    dd {
+      .content {
+        color: green;
+      }
+    }
+  }
+  dl {
+    &.js-boolean, &.js-number, &.js-null {
+      dd {
+        .content {
+          color: darkmagenta;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
 .json {
   %appendix {
     &:before, &:after {
