@@ -1,3 +1,8 @@
+/**
+ JSON pretty HTML printer
+ author: mashijp
+ http://github.com/mashijp/jsonhtml
+ */
 jQuery(function($){
 
     $(".json").on('click', 'dt', function(){
@@ -17,7 +22,7 @@ jQuery(function($){
             result.append(dt);
         }
         var type = value === null ? "null" : typeof value;
-        if (type === "object" && value.length !== undefined) type = "array" // typeof [] ... arrayなのでがんばって判定
+        if (type === "object" && value.length !== undefined) type = "array";
 
         var dd = $("<dd/>");
         var ddContent = $("<div/>").addClass("content");
@@ -60,7 +65,7 @@ jQuery(function($){
                 ddContent.text(value);
                 break;
             default:
-                alert(type);
+                break;
         }
         dd.append($("<span/>").text(",").addClass("separator"));
 
@@ -75,8 +80,8 @@ jQuery(function($){
         return result;
     }
     $.extend({
-        parseJSON: function(json){
-            return createDl(null, json);
+        prettifyJSON: function(json){
+            return $("<div/>").addClass("json").append(createDl(null, json));
         }
     });
 })
