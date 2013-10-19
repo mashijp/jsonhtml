@@ -4,7 +4,7 @@ jQuery(function($){
         $(this).closest(".element").children(".js-value").toggleClass("hidden");
     });
 
-    $(".json2 dt").click(function(){
+    $(".json2").on('click', 'dt', function(){
         $(this).closest("dl").filter(".js-array, .js-object").children("dd").children(".content").toggleClass("hidden");
     });
 

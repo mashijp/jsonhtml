@@ -14,13 +14,15 @@ body {
 }
 
 .json2 {
+  $indent: 20px;
   color: #555;
+  margin-left: -$indent;
   .content {
     display: inline;
   }
   dl {
     display: block;
-    margin-left: 20px;
+    margin-left: $indent;
 
     &>dt {
       display: inline;
@@ -45,6 +47,24 @@ body {
     }
   }
   dl {
+    &.js-array, &.js-object {
+      &>dt {
+        cursor: pointer;
+      }
+      &>dd {
+        &>.content {
+          &.hidden {
+            color: #CCC;
+            width: 1em;
+            height: 1em;
+            &:before {
+              vertical-align: top;
+              content: "......";
+            }
+          }
+        }
+      }
+    }
     &.js-boolean, &.js-number, &.js-null {
       dd {
         .content {
