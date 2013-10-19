@@ -5,9 +5,14 @@
  */
 jQuery(function($){
 
-    $(".json").on('click', 'dt', function(){
-        $(this).closest("dl").filter(".js-array, .js-object").children("dd").children(".content").toggleClass("hidden");
-    });
+    setEvent($(".json"));
+
+    function setEvent(jsonDiv) {
+        $(jsonDiv).on('click', 'dt', function(){
+            $(this).closest("dl").filter(".js-array, .js-object").children("dd").children(".content").toggleClass("hidden");
+        });
+        return jsonDiv;
+    }
 
     function createDl(key, value, nestLevel) {
         if (!nestLevel) nestLevel = 0
@@ -81,7 +86,7 @@ jQuery(function($){
     }
     $.extend({
         prettifyJSON: function(json){
-            return $("<div/>").addClass("json").append(createDl(null, json));
+            return setEvent($("<div/>").addClass("json").append(createDl(null, json)));
         }
     });
 })
