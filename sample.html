@@ -11,55 +11,79 @@
 <body>
   <h1>JSONをHTML＆CSSでいい感じに表現</h1>
 
-  <div class="json2">
+  <div class="input">
     {
-    <div class="content">
-      <dl class="js-string">
-        <dt>"<div class="content">key1</div>":</dt>
-        <dd>"<div class="content">value1</div>"</dd>
-      </dl>
-      <dl class="js-object">
-        <dt>"<div class="content">key2</div>":</dt>
-        <dd>
-          {
-          <div class="content">
-            <dl class="js-boolean">
-              <dt>"<div class="content">key3</div>":</dt>
-              <dd><div class="content">123</div><span class="separator">,</span></dd>
-            </dl>
-            <dl class="js-array">
-              <dt>"<div class="content">key4</div>":</dt>
-              <dd>
-                [
-                <div class="content">
-                  <dl class="js-number">
-                    <dd><div class="content">1</div><span class="separator">,</span></dd>
-                  </dl>
-                  <dl class="js-null">
-                    <dd><div class="content">null</div><span class="separator">,</span></dd>
-                  </dl>
-                  <dl class="js-object">
-                    <dd>
-                      {
-                      <div class="content">
-                        <dl class="js-number">
-                          <dt>"<div class="content">key5</div>":</dt>
-                          <dd><div class="content">1234</div><span class="separator">,</span></dd>
-                        </dl>
-                      </div>
-                      }
-                    </dd>
-                  </dl>
-                </div>
-                ]<span class="separator">,</span>
-              </dd>
-            </dl>
-          </div>
-          }<span class="separator">,</span>
-        </dd>
-      </dl>
-    </div>
+    "key1": "value1",
+    "key2": {
+    "key3": 123,
+    "key4": [
+    1,
+    null,
+    {
+    "key5": 1234
     }
+    ]
+    }
+    }
+  </div>
+
+  <div class="json2 output">
+
+  </div>
+
+  <div class="json2">
+    <dl class="js-object">
+      <dd>
+        {
+        <div class="content">
+          <dl class="js-string">
+            <dt>"<div class="content">key1</div>":</dt>
+            <dd>"<div class="content">value1</div>"<span class="separator">,</span></dd>
+          </dl>
+          <dl class="js-object">
+            <dt>"<div class="content">key2</div>":</dt>
+            <dd>
+              {
+              <div class="content">
+                <dl class="js-boolean">
+                  <dt>"<div class="content">key3</div>":</dt>
+                  <dd><div class="content">123</div><span class="separator">,</span></dd>
+                </dl>
+                <dl class="js-array">
+                  <dt>"<div class="content">key4</div>":</dt>
+                  <dd>
+                    [
+                    <div class="content">
+                      <dl class="js-number">
+                        <dd><div class="content">1</div><span class="separator">,</span></dd>
+                      </dl>
+                      <dl class="js-null">
+                        <dd><div class="content">null</div><span class="separator">,</span></dd>
+                      </dl>
+                      <dl class="js-object">
+                        <dd>
+                          {
+                          <div class="content">
+                            <dl class="js-number">
+                              <dt>"<div class="content">key5</div>":</dt>
+                              <dd><div class="content">1234</div><span class="separator">,</span></dd>
+                            </dl>
+                          </div>
+                          }
+                        </dd>
+                      </dl>
+                    </div>
+                    ]<span class="separator">,</span>
+                  </dd>
+                </dl>
+              </div>
+              }<span class="separator">,</span>
+            </dd>
+          </dl>
+        </div>
+        }
+      </dd>
+    </dl>
   </div>
 
   <div class="json">

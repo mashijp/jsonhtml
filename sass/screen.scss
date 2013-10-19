@@ -54,6 +54,12 @@ body {
       }
     }
   }
+  .hidden {
+    display: inline-block !important;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
 }
 
 .json {
