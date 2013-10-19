@@ -1,153 +1,50 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 6, ../sass/screen.scss */
+/* line 1, ../sass/screen.scss */
 * {
   margin: 0;
   padding: 0;
-  border: 0;
+}
+
+/* line 6, ../sass/screen.scss */
+h1 {
+  position: absolute;
+  width: 100%;
+  height: 40px;
 }
 
 /* line 12, ../sass/screen.scss */
-body {
-  margin: 20px;
+#input {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  bottom: 0;
+  width: 50%;
 }
-
-/* line 16, ../sass/screen.scss */
-.json2 {
-  color: #555;
-  margin-left: -20px;
-}
-/* line 20, ../sass/screen.scss */
-.json2 .content {
-  display: inline;
-}
-/* line 23, ../sass/screen.scss */
-.json2 dl {
+/* line 19, ../sass/screen.scss */
+#input textarea {
   display: block;
-  margin-left: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 20px;
 }
 /* line 27, ../sass/screen.scss */
-.json2 dl > dt {
-  display: inline;
-}
-/* line 29, ../sass/screen.scss */
-.json2 dl > dt > .content {
-  color: darkblue;
-}
-/* line 33, ../sass/screen.scss */
-.json2 dl > dd {
-  display: inline;
-}
-/* line 37, ../sass/screen.scss */
-.json2 dl:last-child > dd > .separator {
-  display: none;
-}
-/* line 44, ../sass/screen.scss */
-.json2 dl.js-string dd .content {
-  color: green;
-}
-/* line 51, ../sass/screen.scss */
-.json2 dl.js-array > dt, .json2 dl.js-object > dt {
-  cursor: pointer;
-}
-/* line 56, ../sass/screen.scss */
-.json2 dl.js-array > dd > .content.hidden, .json2 dl.js-object > dd > .content.hidden {
-  color: #CCC;
-  width: 1em;
-  height: 1em;
-}
-/* line 60, ../sass/screen.scss */
-.json2 dl.js-array > dd > .content.hidden:before, .json2 dl.js-object > dd > .content.hidden:before {
-  vertical-align: top;
-  content: "......";
-}
-/* line 70, ../sass/screen.scss */
-.json2 dl.js-boolean dd .content, .json2 dl.js-number dd .content, .json2 dl.js-null dd .content {
-  color: darkmagenta;
-  font-weight: bold;
-}
-/* line 77, ../sass/screen.scss */
-.json2 .hidden {
-  display: inline-block !important;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+#input input {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-/* line 87, ../sass/screen.scss */
-.json .element:before, .json .js-key:before, .json .js-value.js-string:before, .json .js-value.js-object:before, .json .js-value.js-array:before, .json .element:after, .json .js-key:after, .json .js-value.js-string:after, .json .js-value.js-object:after, .json .js-value.js-array:after {
-  color: #AAA;
-}
-/* line 92, ../sass/screen.scss */
-.json .element {
-  display: block;
-  margin-left: 20px;
-}
-/* line 96, ../sass/screen.scss */
-.json .element:after {
-  content: ",";
-}
-/* line 99, ../sass/screen.scss */
-.json .element:last-child:after {
-  content: "";
-}
-/* line 103, ../sass/screen.scss */
-.json .js-key {
-  display: inline;
-  color: darkblue;
-}
-/* line 107, ../sass/screen.scss */
-.json .js-key:before {
-  content: "\"";
-}
-/* line 110, ../sass/screen.scss */
-.json .js-key:after {
-  content: "\":";
-}
-/* line 115, ../sass/screen.scss */
-.json .js-value.js-string {
-  display: inline;
-  color: green;
-}
-/* line 119, ../sass/screen.scss */
-.json .js-value.js-string:before, .json .js-value.js-string:after {
-  content: "\"";
-}
-/* line 124, ../sass/screen.scss */
-.json .js-value.js-number, .json .js-value.js-boolean, .json .js-value.js-null {
-  display: inline;
-  color: darkmagenta;
-}
-/* line 129, ../sass/screen.scss */
-.json .js-value.js-object {
-  display: inline;
-}
-/* line 132, ../sass/screen.scss */
-.json .js-value.js-object:before {
-  content: "{";
-}
-/* line 135, ../sass/screen.scss */
-.json .js-value.js-object:after {
-  content: "}";
-}
-/* line 140, ../sass/screen.scss */
-.json .js-value.js-array {
-  display: inline;
-}
-/* line 143, ../sass/screen.scss */
-.json .js-value.js-array:before {
-  content: "[";
-}
-/* line 146, ../sass/screen.scss */
-.json .js-value.js-array:after {
-  content: "]";
-}
-/* line 151, ../sass/screen.scss */
-.json .hidden {
-  display: inline-block !important;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+/* line 36, ../sass/screen.scss */
+#output {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  overflow: scroll;
+  overflow-x: hidden;
+  word-break: break-all;
 }
