@@ -1,0 +1,138 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  margin: 20px;
+}
+
+.json2 {
+  color: #555;
+  .content {
+    display: inline;
+  }
+  dl {
+    display: block;
+    margin-left: 20px;
+
+    &>dt {
+      display: inline;
+      &>.content {
+        color: darkblue;
+      }
+    }
+    &>dd {
+      display: inline;
+    }
+    &:last-child {
+      &>dd>.separator {
+        display: none;
+      }
+    }
+  }
+  dl.js-string {
+    dd {
+      .content {
+        color: green;
+      }
+    }
+  }
+  dl {
+    &.js-boolean, &.js-number, &.js-null {
+      dd {
+        .content {
+          color: darkmagenta;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .hidden {
+    display: inline-block !important;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+}
+
+.json {
+  %appendix {
+    &:before, &:after {
+      color: #AAA;
+    }
+  }
+
+  .element {
+    @extend %appendix;
+    display: block;
+    margin-left: 20px;
+    &:after {
+      content: ",";
+    }
+    &:last-child:after {
+      content: "";
+    }
+  }
+  .js-key {
+    @extend %appendix;
+    display: inline;
+    color: darkblue;
+    &:before {
+      content: "\"";
+    }
+    &:after {
+      content: "\":";
+    }
+  }
+  .js-value {
+    &.js-string {
+      @extend %appendix;
+      display: inline;
+      color: green;
+      &:before, &:after {
+        content: "\"";
+      }
+    }
+
+    &.js-number, &.js-boolean, &.js-null {
+      display: inline;
+      color: darkmagenta;
+    }
+
+    &.js-object {
+      @extend %appendix;
+      display: inline;
+      &:before {
+        content: "{";
+      }
+      &:after {
+        content: "}";
+      }
+    }
+
+    &.js-array {
+      @extend %appendix;
+      display: inline;
+      &:before {
+        content: "[";
+      }
+      &:after {
+        content: "]";
+      }
+    }
+  }
+  .hidden {
+    display: inline-block !important;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+}
