@@ -1,37 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="./stylesheets/screen.css" rel="stylesheet" type="text/css" />
+  <link href="./stylesheets/json.css" rel="stylesheet" type="text/css" />
   <meta charset="UTF-8">
   <title>サンプル</title>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-  <script src="./javascripts/sample.js"></script>
+  <script src="javascripts/json.js"></script>
 </head>
 <body>
   <h1>JSONをHTML＆CSSでいい感じに表現</h1>
 
-  <div class="input">
-    {
-    "key1": "value1",
-    "key2": {
-    "key3": 123,
-    "key4": [
-    1,
-    null,
-    {
-    "key5": "比較的長い文章を入れる（改行時のテスト）比較的長い文章を入れる（改行時のテスト）比較的長い文章を入れる（改行時のテスト）比較的長い文章を入れる（改行時のテスト）比較的長い文章を入れる（改行時のテスト）"
-    }
-    ]
-    }
-    }
-  </div>
-
-  <div class="json2 output">
-
-  </div>
-
-  <div class="json2">
+  <div class="json">
     <dl class="js-object">
       <dd>
         {
@@ -85,58 +65,5 @@
       </dd>
     </dl>
   </div>
-
-  <div class="json">
-    <div class="js-value js-object">
-      <div class="element">
-        <div class="js-key">key1</div>
-        <div class="js-value js-string">value1</div>
-      </div>
-      <div class="element">
-        <div class="js-key">key2</div>
-        <div class="js-value js-object">
-          <div class="element">
-            <div class="js-key">key3</div>
-            <div class="js-value js-number">12345</div>
-          </div>
-          <div class="element">
-            <div class="js-key">key4</div>
-            <div class="js-value js-array">
-              <div class="element">
-                <div class="js-value js-string">A</div>
-              </div>
-              <div class="element">
-                <div class="js-value js-string">B</div>
-              </div>
-              <div class="element">
-                <div class="js-value js-number">3</div>
-              </div>
-              <div class="element">
-                <div class="js-value js-object">
-                  <div class="element">
-                    <div class="js-key">fuga</div>
-                    <div class="js-value js-null">null</div>
-                  </div>
-                  <div class="element">
-                    <div class="js-key">hoge</div>
-                    <div class="js-value js-number">12345</div>
-                  </div>
-                </div>
-              </div>
-              <div class="element">
-                <div class="js-value js-string">4</div>
-              </div>
-            </div>
-          </div>
-          <div class="element">
-            <div class="js-key">key6</div>
-            <div class="js-value js-string">めっちゃ長い文字列ABCDEFGめっちゃ長い文字列ABCDEFGめっちゃ長い文字列ABCDEFGめっちゃ長い文字列ABCDEFG</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  end
 </body>
 </html>
