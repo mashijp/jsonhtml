@@ -14,102 +14,114 @@ body {
   margin: 20px;
 }
 
-/* line 17, ../sass/screen.scss */
+/* line 16, ../sass/screen.scss */
+.json2 {
+  color: #555;
+}
+/* line 18, ../sass/screen.scss */
+.json2 .content {
+  display: inline;
+}
+/* line 21, ../sass/screen.scss */
 .json2 dl {
   display: block;
   margin-left: 20px;
 }
-/* line 21, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 .json2 dl > dt {
   display: inline;
 }
-/* line 23, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 .json2 dl > dt > .content {
   color: darkblue;
 }
-/* line 27, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 .json2 dl > dd {
   display: inline;
 }
-/* line 33, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
+.json2 dl:last-child > dd > .separator {
+  display: none;
+}
+/* line 42, ../sass/screen.scss */
 .json2 dl.js-string dd .content {
   color: green;
 }
-/* line 41, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 .json2 dl.js-boolean dd .content, .json2 dl.js-number dd .content, .json2 dl.js-null dd .content {
   color: darkmagenta;
   font-weight: bold;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 .json .element:before, .json .js-key:before, .json .js-value.js-string:before, .json .js-value.js-object:before, .json .js-value.js-array:before, .json .element:after, .json .js-key:after, .json .js-value.js-string:after, .json .js-value.js-object:after, .json .js-value.js-array:after {
   color: #AAA;
 }
-/* line 57, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .json .element {
   display: block;
   margin-left: 20px;
 }
-/* line 61, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 .json .element:after {
   content: ",";
 }
-/* line 64, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 .json .element:last-child:after {
   content: "";
 }
-/* line 68, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 .json .js-key {
   display: inline;
   color: darkblue;
 }
-/* line 72, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 .json .js-key:before {
   content: "\"";
 }
-/* line 75, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 .json .js-key:after {
   content: "\":";
 }
-/* line 80, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .json .js-value.js-string {
   display: inline;
   color: green;
 }
-/* line 84, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 .json .js-value.js-string:before, .json .js-value.js-string:after {
   content: "\"";
 }
-/* line 89, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 .json .js-value.js-number, .json .js-value.js-boolean, .json .js-value.js-null {
   display: inline;
   color: darkmagenta;
 }
-/* line 94, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 .json .js-value.js-object {
   display: inline;
 }
-/* line 97, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 .json .js-value.js-object:before {
   content: "{";
 }
-/* line 100, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .json .js-value.js-object:after {
   content: "}";
 }
-/* line 105, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .json .js-value.js-array {
   display: inline;
 }
-/* line 108, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .json .js-value.js-array:before {
   content: "[";
 }
-/* line 111, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .json .js-value.js-array:after {
   content: "]";
 }
-/* line 116, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .json .hidden {
   display: inline-block !important;
   width: 1px;

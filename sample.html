@@ -12,38 +12,54 @@
   <h1>JSONをHTML＆CSSでいい感じに表現</h1>
 
   <div class="json2">
-    <dl class="js-string">
-      <dt>"<span class="content">key1</span>":</dt>
-      <dd>"<span class="content">value1</span>"</dd>
-    </dl>
-    <dl class="js-object">
-      <dt>"<span class="content">key2</span>":</dt>
-      <dd>
-        <dl class="js-boolean">
-          <dt>"<span class="content">key3</span>":</dt>
-          <dd><span class="content">123</span></dd>
-        </dl>
-        <dl class="js-array">
-          <dt>"<span class="content">key4</span>":</dt>
-          <dd>
-            <dl class="js-number">
-              <dd>1</dd>
+    {
+    <div class="content">
+      <dl class="js-string">
+        <dt>"<div class="content">key1</div>":</dt>
+        <dd>"<div class="content">value1</div>"</dd>
+      </dl>
+      <dl class="js-object">
+        <dt>"<div class="content">key2</div>":</dt>
+        <dd>
+          {
+          <div class="content">
+            <dl class="js-boolean">
+              <dt>"<div class="content">key3</div>":</dt>
+              <dd><div class="content">123</div><span class="separator">,</span></dd>
             </dl>
-            <dl class="js-null">
-              <dd>null</dd>
-            </dl>
-            <dl class="js-object">
+            <dl class="js-array">
+              <dt>"<div class="content">key4</div>":</dt>
               <dd>
-                <dl class="js-number">
-                  <dt>key5</dt>
-                  <dd>1234</dd>
-                </dl>
+                [
+                <div class="content">
+                  <dl class="js-number">
+                    <dd><div class="content">1</div><span class="separator">,</span></dd>
+                  </dl>
+                  <dl class="js-null">
+                    <dd><div class="content">null</div><span class="separator">,</span></dd>
+                  </dl>
+                  <dl class="js-object">
+                    <dd>
+                      {
+                      <div class="content">
+                        <dl class="js-number">
+                          <dt>"<div class="content">key5</div>":</dt>
+                          <dd><div class="content">1234</div><span class="separator">,</span></dd>
+                        </dl>
+                      </div>
+                      }
+                    </dd>
+                  </dl>
+                </div>
+                ]<span class="separator">,</span>
               </dd>
             </dl>
-          </dd>
-        </dl>
-      </dd>
-    </dl>
+          </div>
+          }<span class="separator">,</span>
+        </dd>
+      </dl>
+    </div>
+    }
   </div>
 
   <div class="json">
